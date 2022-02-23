@@ -2,11 +2,11 @@
 -------------------------------------------------------------------------
 Name:		Sketch.java
 
-Purpose: 5.2 Processing Task 1 - Calling Functions
+Purpose: Using variables to scale an image based on size of frame. Using variables for 5.3 Proccesing Task.
 
 Author:	Chan. A
 
-Created:	date in 02/22/2022
+Created:	date in 02/23/2022
 -------------------------------------------------------------------------
 */
 
@@ -22,7 +22,7 @@ public class Sketch extends PApplet {
   public void settings() {
 	// put your size call here
       //()
-    size(800, 800);
+    size(400, 400);
   }
 
   /** 
@@ -48,10 +48,10 @@ public class Sketch extends PApplet {
     grass(width/4f, height/1.23f);
     grass(width/2f, height/1.23f);
     grass(width/1.33f, height/1.23f);
-    grass(width/1.067f, height/1.23f);
+    grass(width/1.0667f, height/1.23f);
 
     fill(147, 192, 97);
-    rect(0, height/1.23f, width/1f, height/17.8f);
+    rect(0, height/1.23f, width/1f, height/17.78f);
 
 
     stroke(0, 0, 0);
@@ -111,11 +111,11 @@ public class Sketch extends PApplet {
 
   
   // define other methods down here.
-  public void grass(double x, double y) {
+  public void grass(float x, float y) {
 
 
     fill(147, 192, 97);
-    rect((float)x, (float)y, 50, 75);
+    rect(x, y, width/16f, height/10.667f);
   
     }
 
