@@ -22,7 +22,7 @@ public class Sketch extends PApplet {
   public void settings() {
 	// put your size call here
       //()
-    size(400, 400);
+    size(800, 800);
   }
 
   /** 
@@ -38,7 +38,7 @@ public class Sketch extends PApplet {
    */
   public void draw() {
 	  
-    //draw ground
+    // draw ground
 
     noStroke();
 
@@ -57,7 +57,7 @@ public class Sketch extends PApplet {
     stroke(0, 0, 0);
     strokeWeight(1);
 
-    //draw sun 
+    // draw sun 
     fill(255, 255, 35);
     ellipse(width/8f, height/8f, width/10.667f, height/10.667f);
 
@@ -66,36 +66,35 @@ public class Sketch extends PApplet {
 
     line(width/6.299f, height/6.299f, width/5f, height/5f);
 
-    //draw house
+    // draw house
     fill(168, 97, 87);
     rect(width/3.555f, height/2.46f, width/2.2857f, height/2.4615f);
 
-    //draw roof
+    // draw roof
     fill(124, 117, 110);
     triangle(width/2f, height/4.571f, width/4.848f, height/2.461f, width/1.26f, height/2.4615f);
 
-    //draw left window
+    // draw left window
     fill(122, 184, 221);
     ellipse(width/2.556f, height/1.9f, width/16f, height/10.67f);
     line(width/2.78f, height/1.9f, width/2.367f, height/1.9f);
     line(width/2.56f, height/2.089f, width/2.56f, height/1.75f);
 
-    //draw right window
+    // draw right window
     ellipse(width/1.639f, height/1.9f, width/16f, height/10.67f);
     line(width/1.724f, height/1.904f, width/1.559f, height/1.904f);
     line(width/1.639f, height/2.089f, width/1.639f, height/1.754f);
 
-    //draw door
+    // draw door
     fill(123, 68, 29);
     rect(width/2.286f, height/1.6f, width/8f, height/5.333f);
 
-    //draw door knob
+    // draw door knob
     fill(70, 71, 77);
     ellipse(width/2.133f, height/1.4159f, width/53.33f, height/53.33f);
 
+    // draw clouds
     noStroke();
-
-    //draw clouds
     fill(255, 255, 255);
     ellipse(width/2.667f, height/16f, width/8f, height/16f);
     ellipse(width/2.2857f, height/11.428f, width/8f, height/16f);
@@ -111,13 +110,23 @@ public class Sketch extends PApplet {
 
   
   // define other methods down here.
+
+  /**
+   * Given two floats, return the x and y coordinates of a rectangle
+   * 
+   * @param x The first x coordinate
+   * @param y The first y coordinate
+   * @return the two floats as the x and y coordinate of a rectangle
+   * @author A. Chan
+   */
   public void grass(float x, float y) {
 
-
-    fill(147, 192, 97);
+    fill(147, 192, 97); 
     rect(x, y, width/16f, height/10.667f);
   
     }
+  
+    
 
 
   
